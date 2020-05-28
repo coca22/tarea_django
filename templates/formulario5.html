@@ -1,0 +1,14 @@
+{% extends 'index.html'%}
+
+{% block content%}
+<h1>Formulario para Comentar </h1>
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+    <br>
+<button class="btn btn-primary" type="submit">Enviar</button>
+    <a href="{% url 'home'%}" class="btn btn-secondary" type="submit">Regresar</a>
+</div>
+
+
+{% endblock%}

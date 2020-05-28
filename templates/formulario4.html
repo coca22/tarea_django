@@ -1,0 +1,21 @@
+{% extends 'index.html'%}
+{% block content%}
+    <h1>Formulario de Inicio 4</h1>
+     <br>
+<form class="form-inline" action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Enviar</button>
+<a href="{% url 'home'%}" class="btn btn-secondary" type="submit">Regresar</a>
+</form>
+
+{% endblock%}
